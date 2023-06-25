@@ -1,0 +1,300 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn{
+    background-color: blue !important;
+    border: black;
+}
+
+.btn:hover{
+    background-color: black !important;
+    border: black;
+}
+
+/* Footer */
+footer section i{
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+}
+
+footer section i:hover{
+    color: black !important;
+}
+
+footer a{
+    text-decoration: none;
+    color: blue !important;
+}
+
+footer a:hover{
+    color: black !important;
+}
+
+footer footer div{
+    background-color: rgba(0, 0, 0, 0.555);
+}
+
+
+                                            /*.........................Home Page..........................*/
+/* Background Carosel Portion */
+.carousel-caption {
+	bottom: 18vh;
+}
+
+.carousel-caption h5{
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+.carousel-caption p{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 14vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 40px;
+    }
+
+    .carousel-caption p{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 10vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 30px;
+    }
+
+    .carousel-caption p{
+        font-size: 20px;
+    }
+}
+
+
+@media only screen and (max-width: 793px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 7vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 25px;
+    }
+
+    .carousel-caption p{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 653px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 7vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 35px;
+    }
+
+    .carousel-caption p{
+        font-size: 0px;
+    }
+}
+
+@media only screen and (max-width: 523px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 4vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 25px;
+    }
+
+    .carousel-caption p{
+        font-size: 0px;
+    }
+}
+
+@media only screen and (max-width: 368px) {
+	.navbar-nav {
+		text-align: right;
+	}
+
+    .carousel-caption{
+        bottom: 1vh;
+    }
+
+    .carousel-caption h5{
+        font-size: 22px;
+    }
+
+    .carousel-caption p{
+        font-size: 0px;
+    }
+}
+
+
+/* NavBar Portion */
+.navbar-brand{
+    color: blue;
+}
+
+.Nav-Links a {
+    position: relative;
+    text-decoration: none;
+    color: lightgray;
+    font-size: 15px !important;
+    padding: 0 15px !important;
+}
+
+
+/* Welcome Portion on Home Page */
+#Welcome-card{
+    border-width: 0;
+    flex-direction: row;
+}
+
+
+/* Core Values Portion */
+#Value-card{
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+#Values-img{
+    max-height: 120px;
+    max-width: 80px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+#Values-carousel-control{
+    color: blue;
+    font-size: 2.5rem;
+    width: 10vh;
+    height: 10vh;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 100 !important;
+}
+
+#Values-carousel-control:hover{
+    color: black;
+}
+
+                                                /*..........................Home Page.........................*/
+
+                                                /*.........................About Page.........................*/
+/* BreadCrumbs Portion */
+.breadcrumb-item,
+.breadcrumb-item a,
+.breadcrumb-item::before {
+    color: white !important;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+    color: blue !important;
+    transition-duration: 0.5s;
+}
+
+
+/* About our Company + CEO + Vision*/
+#About-card{
+    border-width: 0;
+    flex-direction: row;
+}
+
+#About-Company-card-body{
+    padding: 0 10vh 0 0;
+}
+
+#About-CEO-card-body{
+    padding: 0 0 0 10vh;
+}
+
+#About-Vision-card-body{
+    padding: 0 10vh 0 0;
+}
+
+#About-card-title{
+    padding-bottom: 5px;
+}
+
+#About-card-text{
+    text-align: justify;
+}
+  
+#About-card-img {
+    padding: 20px 0 8px 0;
+    width: 50%;
+}
+
+                                                /*.........................About Page.........................*/
+
+                                                /*........................Service Pages.......................*/
+/* Body of Services differnet Pages */
+#Service-card{
+    border-width: 0;
+    flex-direction: row;
+}
+
+#Service-card-body{
+    padding: 0;
+}
+
+#Service-card-title{
+    padding-bottom: 5px;
+}
+
+#Service-card-text{
+    text-align: justify;
+}
+
+/* Service Page Cards Portion */
+#Services-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#Services-col{
+    padding: 0 10px 0 10px;
+    border-radius: 0;
+}
+
+                                                /*........................Service Pages.......................*/
+
+                                                /*........................Contact Page........................*/
+
+                                                /*........................Contact Page........................*/
+
+
+
