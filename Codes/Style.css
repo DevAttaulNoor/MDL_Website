@@ -36,7 +36,7 @@ footer footer div{
 }
 
 
-                                            /*.........................Home Page..........................*/
+/*.........................Home Page..........................*/
 /* Background Carosel Portion */
 .carousel-caption {
 	bottom: 18vh;
@@ -208,9 +208,7 @@ footer footer div{
     color: black;
 }
 
-                                                /*..........................Home Page.........................*/
-
-                                                /*.........................About Page.........................*/
+/*.........................About Page.........................*/
 /* BreadCrumbs Portion */
 .breadcrumb-item,
 .breadcrumb-item a,
@@ -256,9 +254,7 @@ footer footer div{
     width: 50%;
 }
 
-                                                /*.........................About Page.........................*/
-
-                                                /*........................Service Pages.......................*/
+/*........................Service Pages.......................*/
 /* Body of Services differnet Pages */
 #Service-card{
     border-width: 0;
@@ -290,11 +286,4 @@ footer footer div{
     border-radius: 0;
 }
 
-                                                /*........................Service Pages.......................*/
-
-                                                /*........................Contact Page........................*/
-
-                                                /*........................Contact Page........................*/
-
-
-
+/*........................Contact Page........................*/
