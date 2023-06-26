@@ -1,4 +1,4 @@
-// Making Navbar Black
+//* Making Navbar Black
 let nav_black = document.querySelector('nav')
 if (nav_black){
     window.addEventListener('scroll', ()=>{
