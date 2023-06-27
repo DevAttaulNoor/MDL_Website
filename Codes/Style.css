@@ -1,52 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600&family=Roboto&display=swap');
 
-/** Global Variables */
+/** ...................Gloable Variables.................... */
 *{
     box-sizing: border-box;
-    scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
 }
 
-.btn{
-    background-color: blue !important;
-    border: black;
+html{
+    scroll-behavior: smooth;
 }
 
-.btn:hover{
-    background-color: black !important;
-    border: black;
-}
-
-/* Footer */
-footer section i{
-    font-size: 1.5rem;
-    letter-spacing: 8px;
-}
-
-footer section i:hover{
-    color: black !important;
-}
-
-footer a{
-    text-decoration: none;
+/** ...................Home Page.................... */
+/* Navbar Section */
+.navbar-brand{
     color: blue !important;
 }
 
-footer a:hover{
-    color: black !important;
+.Nav-Links a {
+    position: relative;
+    text-decoration: none;
+    color: lightgray;
 }
 
-footer footer div{
-    background-color: rgba(0, 0, 0, 0.555);
+.nav-link{
+    padding: 0 !important;
+    margin-left: 20px;
 }
 
-
-/*.........................Home Page..........................*/
-/* Background Carosel Portion */
-.carousel-caption {
-	bottom: 18vh;
-}
-
+/* Background Carousel Section */
 .carousel-caption h5{
     font-size: 50px;
     letter-spacing: 2px;
@@ -56,6 +37,128 @@ footer footer div{
     font-size: 30px;
 }
 
+#carousel-Mtext{
+    animation-delay: 0.5s;
+}
+
+#carousel-text{
+    animation-delay: 1s;
+}
+
+/* Aboutus Card Section */
+#aboutus{
+    border: none;
+    flex-direction: row;
+}
+
+/* Core Values Portion */
+#Value-card{
+    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+}
+
+#Values-img{
+    max-height: 120px;
+    max-width: 80px;
+    margin: auto;
+    padding: 20px 0 20px 0;
+}
+
+#Values-carousel-control{
+    color: blue;
+    font-size: 2.5rem;
+    width: 10vh;
+    height: 10vh;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 100 !important;
+}
+
+#Values-carousel-control:hover{
+    color: black;
+}
+
+/** ...................About Page.................... */
+/* Background Pic Section */
+.breadcrumb-item,
+.breadcrumb-item a,
+.breadcrumb-item::before {
+    color: white !important;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover{
+    color: blue !important;
+    transition-duration: 0.5s;
+}
+
+/* AboutUs Card Section */
+#About-card{
+    border-width: 0;
+    flex-direction: row;
+}
+
+#About-card-title{
+    padding-bottom: 5px;
+}
+
+#About-card-text{
+    text-align: justify;
+}
+  
+#About-card-img {
+    padding: 20px 0 8px 0;
+    width: 50%;
+}
+
+#About-Company-card-body{
+    padding: 0 10vh 0 0;
+}
+
+/* About President Card Section */
+#About-CEO-card-body{
+    padding: 0 0 0 10vh;
+}
+
+/* Our Vision Card Section */
+#About-Vision-card-body{
+    padding: 0 10vh 0 0;
+}
+
+/** ...................Services Page.................... */
+/* Services Section */
+#Service-card{
+    border-width: 0;
+    flex-direction: row;
+}
+
+#Service-card-body{
+    padding: 0;
+}
+
+#Service-card-title{
+    padding-bottom: 5px;
+}
+
+#Service-card-text{
+    text-align: justify;
+}
+
+#Services-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+#Services-col{
+    padding: 0 10px 0 10px;
+    border-radius: 0;
+}
+
+/** ...................Contact Page.................... */
+
+
+/** ...................Responsive Media Queries.................... */
 @media only screen and (max-width: 1200px) {
 	.navbar-nav {
 		text-align: right;
@@ -91,7 +194,6 @@ footer footer div{
         font-size: 20px;
     }
 }
-
 
 @media only screen and (max-width: 793px) {
 	.navbar-nav {
@@ -165,130 +267,3 @@ footer footer div{
     }
 }
 
-
-/* NavBar Portion */
-.navbar-brand{
-    color: blue;
-}
-
-.Nav-Links a {
-    position: relative;
-    text-decoration: none;
-    color: lightgray;
-    font-size: 15px !important;
-    padding: 0 15px !important;
-}
-
-
-/* Welcome Portion on Home Page */
-#Welcome-card{
-    border-width: 0;
-    flex-direction: row;
-}
-
-
-/* Core Values Portion */
-#Value-card{
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-}
-
-#Values-img{
-    max-height: 120px;
-    max-width: 80px;
-    margin: auto;
-    padding: 20px 0 20px 0;
-}
-
-#Values-carousel-control{
-    color: blue;
-    font-size: 2.5rem;
-    width: 10vh;
-    height: 10vh;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 100 !important;
-}
-
-#Values-carousel-control:hover{
-    color: black;
-}
-
-/*.........................About Page.........................*/
-/* BreadCrumbs Portion */
-.breadcrumb-item,
-.breadcrumb-item a,
-.breadcrumb-item::before {
-    color: white !important;
-    text-decoration: none;
-}
-
-.breadcrumb-item a:hover{
-    color: blue !important;
-    transition-duration: 0.5s;
-}
-
-
-/* About our Company + CEO + Vision*/
-#About-card{
-    border-width: 0;
-    flex-direction: row;
-}
-
-#About-Company-card-body{
-    padding: 0 10vh 0 0;
-}
-
-#About-CEO-card-body{
-    padding: 0 0 0 10vh;
-}
-
-#About-Vision-card-body{
-    padding: 0 10vh 0 0;
-}
-
-#About-card-title{
-    padding-bottom: 5px;
-}
-
-#About-card-text{
-    text-align: justify;
-}
-  
-#About-card-img {
-    padding: 20px 0 8px 0;
-    width: 50%;
-}
-
-/*........................Service Pages.......................*/
-/* Body of Services differnet Pages */
-#Service-card{
-    border-width: 0;
-    flex-direction: row;
-}
-
-#Service-card-body{
-    padding: 0;
-}
-
-#Service-card-title{
-    padding-bottom: 5px;
-}
-
-#Service-card-text{
-    text-align: justify;
-}
-
-/* Service Page Cards Portion */
-#Services-title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-transform: uppercase;
-}
-
-#Services-col{
-    padding: 0 10px 0 10px;
-    border-radius: 0;
-}
-
-/*........................Contact Page........................*/
