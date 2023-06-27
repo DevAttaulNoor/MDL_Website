@@ -1,12 +1,12 @@
 //* Making Navbar Black
-let nav_black = document.querySelector('nav')
-if (nav_black){
+let nav_color = document.querySelector('nav')
+if (nav_color){
     window.addEventListener('scroll', ()=>{
-        if (window.scrollY > 100) {
-            nav_black.classList.add('bg-dark', 'shadow');
+        if (window.scrollY > 80) {
+            nav_color.classList.add('nav-color', 'shadow');
         }
         else{
-            nav_black.classList.remove('bg-dark');
+            nav_color.classList.remove('nav-color');
         }
     })
 }
