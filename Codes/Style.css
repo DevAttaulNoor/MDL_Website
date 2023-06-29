@@ -33,6 +33,14 @@ span{
     color: var(--secondary-color);
 }
 
+.mt-8{
+    margin-top: 80px;
+}
+
+.mb-8{
+    margin-bottom: 80px;
+}
+
 #pri-btn{
     color: var(--basic-color);
     background-color: var(--primary-color);
@@ -250,13 +258,12 @@ footer #newsletter form{
 .breadcrumb-item,
 .breadcrumb-item a,
 .breadcrumb-item::before {
-    color: white !important;
+    color: var(--basic-color) !important;
     text-decoration: none;
 }
 
 .breadcrumb-item a:hover {
-    color: blue !important;
-    transition-duration: 0.5s;
+    color: var(--secondary-color) !important;
 }
 
 /* About President Card Section */
@@ -317,7 +324,7 @@ footer #newsletter form{
 /** ...................Contact Page.................... */
 
 /** ...................Responsive Media Queries.................... */
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
     .navbar-nav {
         text-align: right;
     }
@@ -423,4 +430,4 @@ footer #newsletter form{
     .carousel-caption p {
         font-size: 0px;
     }
-}
+} */
