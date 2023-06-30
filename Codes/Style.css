@@ -292,7 +292,12 @@ footer #newsletter form{
 
 /** ...................Services Page.................... */
 /* Services Section */
-#Service-card {
+#services .col{
+    margin-bottom: 40px;
+    border-radius: 20px;
+}
+
+/* #Service-card {
     border-width: 0;
     flex-direction: row;
 }
@@ -319,7 +324,7 @@ footer #newsletter form{
 #Services-col {
     padding: 0 10px 0 10px;
     border-radius: 0;
-}
+} */
 
 /** ...................Contact Page.................... */
 
