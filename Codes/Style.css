@@ -14,7 +14,6 @@ html {
     --primary-color: #002147;
     --secondary-color: #b9cf25;
     --tertiary-color: #999999;
-    --text-color: #e4e4e4;
     --basic-color: #fff;
 
     --links-fs: 18px;
@@ -45,6 +44,20 @@ span{
     color: var(--basic-color);
     background-color: var(--primary-color);
     padding: 10px 40px;
+}
+
+#pri-small-btn{
+    color: var(--basic-color);
+    background-color: var(--primary-color);
+    padding: 5px 12px;
+    font-size: 14px;
+}
+
+#pri-btn:hover,
+#pri-small-btn:hover {
+    color: var(--primary-color);
+    background-color: transparent;
+    border: 1px solid var(--primary-color);
 }
 
 #sec-btn {
@@ -192,8 +205,6 @@ nav .navbar-brand:hover{
 footer{
     background-color: var(--primary-color) !important;
     padding: 60px 0 20px 0;
-    margin-top: 180px;
-    padding-top: 180px;
     height: 85%;
     position: relative;
 }
@@ -202,8 +213,10 @@ footer h3{
     color: var(--basic-color);
 }
 
-footer i{
+#socials i{
     color: var(--secondary-color);
+    font-size: 30px;
+    margin-right: 10px;
 }
 
 footer a,
@@ -212,19 +225,17 @@ footer p{
     color: var(--tertiary-color);
 }
 
+footer i,
 footer a:hover{
     color: var(--secondary-color);
 }
 
 footer #newsletter {
-    padding: 30px;
+    padding: 50px;
     background-color: var(--secondary-color);
     color: var(--basic-color);
     height: 40vh;
-    width: 88%;
     border-radius: 50px;
-    position: absolute;
-    top: -135px;
 }
 
 footer #newsletter form{
@@ -336,6 +347,12 @@ footer #newsletter form{
 }
 
 /** ...................Contact Page.................... */
+/* Form Section */
+#form .col button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 /** ...................Responsive Media Queries.................... */
 /* @media only screen and (max-width: 1200px) {
