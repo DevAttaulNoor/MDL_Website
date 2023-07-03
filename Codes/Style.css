@@ -85,6 +85,7 @@ nav .navbar-brand {
     color: var(--secondary-color);
     line-height: 22px;
     text-align: center;
+    margin: 10px 0;
 }
 
 nav .navbar-brand:hover {
@@ -116,7 +117,7 @@ nav .navbar-brand:hover {
 
 .nav-link {
     padding: 0 !important;
-    margin: 0 20px;
+    margin: 0 20px 10px 0;
 }
 
 /* Background Carousel Section */
@@ -163,7 +164,7 @@ nav .navbar-brand:hover {
 
 #qualities .card {
     background-color: transparent;
-    border: 2px solid var(--secondary-color);
+    border: none;
 }
 
 #qualities .card img {
@@ -269,7 +270,7 @@ footer a:hover {
 }
 
 footer #newsletter {
-    padding: 50px;
+    padding: 100px 0;
     background-color: var(--secondary-color);
     color: var(--white-color);
     height: 40vh;
@@ -392,38 +393,8 @@ footer #newsletter form {
     justify-content: center;
 }
 
-
-
-
-
-/* Responsive */
-/* @media(max-width:991px) {
-    .testi-img .img-box {
-        max-width: 300px;
-    }
-
-    .testi-img .circle {
-        height: 300px;
-        width: 300px;
-    }
-
-    .testi-img .img-box-inner {
-        border-radius: 0 0 150px 150px;
-    }
-
-    .testi-img .img-box-inner img {
-        max-width: 230px;
-    }
-}
-
-@media(max-width:767px) {
-    .testi-img {
-        margin-bottom: 25px;
-    }
-} */
-
-/** ...................Responsive Media Queries.................... */
 /* @media only screen and (max-width: 1200px) {
+
     .navbar-nav {
         text-align: right;
     }
@@ -530,3 +501,91 @@ footer #newsletter form {
         font-size: 0px;
     }
 } */
+/** ...................Responsive Media Queries.................... */
+@media screen and (max-width: 885px) {
+
+    /* Background Section */
+    #background .carousel-inner img {
+        height: 70vh;
+    }
+
+    #background .carousel-caption {
+        top: 35%
+    }
+
+    /* Aboutus Section */
+    #aboutus {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #aboutus img {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    #aboutus .card-body {
+        margin: 0;
+    }
+
+    /* Qualities Section */
+    #qualities .card img {
+        max-height: 120px;
+        max-width: 80px;
+        margin: auto;
+        padding: 10px 0 10px 0;
+    }
+
+    /* Testimonials Section */
+    .testi-img .circle {
+        height: 260px;
+        width: 260px;
+    }
+
+    .testi-img .img-box-inner {
+        height: 260px;
+    }
+
+    .testi-img .img-box-inner img {
+        max-width: 260px;
+        max-height: 260px;
+    }
+
+    .testimonial .carousel-inner {
+        margin-top: 0 !important;
+    }
+
+    /* Footer Section */
+    footer #newsletter {
+        height: 25vh;
+        padding: 65px 0;
+    }
+
+    #newsletter input {
+        width: 50%;
+        padding: 10px 20px;
+    }
+
+    #newsletter button {
+        width: 20%;
+    }
+
+    #socials i {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    /* Globals */
+
+    /* Background Section */
+    #background .carousel-inner img {
+        height: 40vh;
+    }
+
+    #background .carousel-caption {
+        top: 15%
+    }
+
+}
