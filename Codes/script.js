@@ -1,12 +1,18 @@
 //* Making Navbar Black
 let nav_color = document.querySelector('nav')
-if (nav_color){
-    window.addEventListener('scroll', ()=>{
+if (nav_color) {
+    window.addEventListener('scroll', () => {
         if (window.scrollY > 80) {
             nav_color.classList.add('nav-color', 'shadow');
         }
-        else{
+        else {
             nav_color.classList.remove('nav-color');
         }
     })
 }
+
+const myCarousel = document.getElementById('myCarousel')
+myCarousel.addEventListener('slid.bs.carousel', function () {
+    const activeItem = this.querySelector(".active");
+    document.querySelector(".testi-img img").src = activeItem.getAttribute("data-img");
+})
