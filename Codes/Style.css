@@ -41,7 +41,7 @@ span {
 #pri-btn {
     color: var(--white-color);
     background-color: var(--primary-color);
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 #pri-small-btn {
@@ -61,7 +61,7 @@ span {
 #sec-btn {
     color: var(--white-color);
     background-color: var(--secondary-color);
-    padding: 10px 30px;
+    padding: 10px 20px;
 }
 
 #sec-small-btn {
@@ -253,7 +253,7 @@ footer h3 {
 }
 
 #socials i {
-    color: var(--secondary-color);
+    color: var(--grey-color);
     font-size: 30px;
     margin: 0 8px;
 }
@@ -265,7 +265,8 @@ footer p {
 }
 
 footer i,
-footer a:hover {
+footer a:hover,
+#socials i:hover {
     color: var(--secondary-color);
 }
 
@@ -393,124 +394,15 @@ footer #newsletter form {
     justify-content: center;
 }
 
-/* @media only screen and (max-width: 1200px) {
-
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 14vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 40px;
-    }
-
-    .carousel-caption p {
-        font-size: 25px;
-    }
-}
-
-@media only screen and (max-width: 992px) {
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 10vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 30px;
-    }
-
-    .carousel-caption p {
-        font-size: 20px;
-    }
-}
-
-@media only screen and (max-width: 793px) {
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 7vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 25px;
-    }
-
-    .carousel-caption p {
-        font-size: 15px;
-    }
-}
-
-@media only screen and (max-width: 653px) {
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 7vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 35px;
-    }
-
-    .carousel-caption p {
-        font-size: 0px;
-    }
-}
-
-@media only screen and (max-width: 523px) {
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 4vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 25px;
-    }
-
-    .carousel-caption p {
-        font-size: 0px;
-    }
-}
-
-@media only screen and (max-width: 368px) {
-    .navbar-nav {
-        text-align: right;
-    }
-
-    .carousel-caption {
-        bottom: 1vh;
-    }
-
-    .carousel-caption h5 {
-        font-size: 22px;
-    }
-
-    .carousel-caption p {
-        font-size: 0px;
-    }
-} */
 /** ...................Responsive Media Queries.................... */
 @media screen and (max-width: 885px) {
-
     /* Background Section */
     #background .carousel-inner img {
-        height: 70vh;
+        height: 60vh;
     }
 
     #background .carousel-caption {
-        top: 35%
+        top: 30%
     }
 
     /* Aboutus Section */
@@ -572,9 +464,21 @@ footer #newsletter form {
 }
 
 @media screen and (max-width: 560px) {
-    /* Globals */
-
     /* Background Section */
+    #background .carousel-caption h1 {
+        font-size: 18px;
+    }
+
+    #background .carousel-caption p {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    #background .carousel-caption button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
     #background .carousel-inner img {
         height: 40vh;
     }
@@ -618,16 +522,18 @@ footer #newsletter form {
     /* Footer Section */
     footer #newsletter {
         height: 30vh;
-        padding: 50px 20px;
+        padding: 55px 15px;
     }
 
     #newsletter input {
-        width: 50%;
-        padding: 10px 20px;
+        width: 60%;
+        padding: 8px 15px;
     }
 
     #newsletter button {
-        width: 40%;
+        width: 30%;
+        padding: 8px 15px;
+        font-size: 16px;
     }
 
     footer .col{
