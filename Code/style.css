@@ -99,12 +99,12 @@ nav .nav-link {
 
 nav .nav-link:hover,
 nav .nav-link.active,
-nav .navbar-brand:hover{
+nav .navbar-brand:hover {
     color: var(--secondary-color) !important;
 }
 
 nav .nav-link:hover::after,
-nav .nav-link.active::after{
+nav .nav-link.active::after {
     position: absolute;
     content: "";
     width: 25px;
@@ -127,13 +127,13 @@ nav .dropdown-item {
 }
 
 nav .dropdown-item:hover,
-.dropdown-item.active, 
+.dropdown-item.active,
 .dropdown-item:active {
     background-color: transparent !important;
     color: var(--secondary-color) !important;
 }
 
-nav #navbarNav .btn{
+nav #navbarNav .btn {
     padding: 12px;
     font-size: 14px;
 }
@@ -143,7 +143,7 @@ nav #navbarNav .btn{
     position: relative;
 }
 
-#header-pic .carousel-caption {
+#header-pic .carousel-caption.home {
     position: absolute;
     top: 35%
 }
@@ -331,8 +331,14 @@ footer #newsletter form {
 }
 
 /** ...................About Page.................... */
+/* Header Pic Section */
+#header-pic .carousel-caption {
+    position: absolute;
+    top: 40%
+}
+
 /* Background Pic Section */
-#header-pic nav{
+#header-pic nav {
     --bs-breadcrumb-divider: url(../../Svgs/breadcrumbs-svgrepo-com.svg width: 10; height: 10;)
 }
 
@@ -427,34 +433,33 @@ footer #newsletter form {
 
 /** ...................Services Page.................... */
 /* Services Section */
-#service h1 span,
-#service p,
-#services-card .card-title {
-    color: var(--secondary-color);
+.service:nth-child(even) {
+    border: none;
+    flex-direction: row;
 }
 
-#services-card .col {
-    margin-bottom: 30px;
+.service:nth-child(odd) {
+    border: none;
+    flex-direction: row-reverse;
 }
 
-#services-card .card,
-#services-card .card img {
-    border-radius: 50px;
-    box-shadow: 5px 8px 10px rgba(0, 0, 0, 0.3);
+.service:nth-child(even) .card-body {
+    border-top: 5px solid var(--secondary-color);
+    margin-left: 4%;
+    height: fit-content;
 }
 
-#services-card .card-img-overlay {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 50px;
+.service:nth-child(odd) .card-body {
+    border-top: 5px solid var(--secondary-color);
+    margin-right: 4%;
+    height: fit-content;
 }
 
 /** ...................Services Pages Sea, Land, etc.................... */
 /* About Service Section */
 #all-services .card {
     border: none;
+    text-align: justify;
 }
 
 #all-services .card-title {
@@ -472,12 +477,13 @@ footer #newsletter form {
 
 /** ...................Responsive Media Queries.................... */
 @media screen and (max-width: 885px) {
-    /* Background Section */
-    #background .carousel-inner img {
+
+    /* Header Pic Section */
+    #header-pic .carousel-inner img {
         height: 60vh;
     }
 
-    #background .carousel-caption {
+    #header-pic .carousel-caption.home {
         top: 30%
     }
 
@@ -537,29 +543,68 @@ footer #newsletter form {
     #newsletter button {
         width: 20%;
     }
+
+    /** ...................About Page.................... */
+    /* About President/Vision Card Section */
+    #about-president,
+    #about-vision {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #about-president img,
+    #about-vision img {
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    #about-president .card-body,
+    #about-vision .card-body {
+        margin: 0;
+    }
+
+    /** ...................Services Page.................... */
+    /* Services Section */
+    .service:nth-child(even),
+    .service:nth-child(odd){
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service:nth-child(even) img,
+    .service:nth-child(odd) img{
+        width: 100% !important;
+        margin-bottom: 30px;
+    }
+
+    .service:nth-child(even) .card-body,
+    .service:nth-child(odd) .card-body {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 560px) {
-    /* Background Section */
-    #background .carousel-caption h1 {
+
+    /* Header Pic Section */
+    #header-pic .carousel-caption.home h1 {
         font-size: 18px;
     }
 
-    #background .carousel-caption p {
+    #header-pic .carousel-caption.home p {
         font-size: 12px;
         line-height: 14px;
     }
 
-    #background .carousel-caption button {
+    #header-pic .carousel-caption.home button {
         padding: 8px;
         font-size: 14px;
     }
 
-    #background .carousel-inner img {
+    #header-pic .carousel-inner img {
         height: 40vh;
     }
 
-    #background .carousel-caption {
+    #header-pic .carousel-caption.home {
         top: 15%
     }
 
@@ -583,7 +628,7 @@ footer #newsletter form {
     }
 
     .testimonial .carousel-item h3,
-    .testimonial .carousel-item p{
+    .testimonial .carousel-item p {
         width: initial;
         text-align: center;
     }
@@ -612,7 +657,7 @@ footer #newsletter form {
         font-size: 16px;
     }
 
-    footer .col{
+    footer .col {
         margin-bottom: 15px;
     }
 }
