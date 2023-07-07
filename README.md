@@ -1,4 +1,4 @@
-# Responsive Shipping Website
+# A Responsive Shipping Website
 We propose the development of a comprehensive shipping website that aims to streamline and simplify the shipping process for businesses and individuals. This platform will provide a user-friendly interface, advanced tracking capabilities, and efficient logistics management features. Our goal is to create a reliable and efficient shipping solution that meets the diverse needs of users.
 
 # Getting Started
