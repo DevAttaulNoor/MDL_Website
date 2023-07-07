@@ -22,4 +22,4 @@ This project is licensed under the DevAttaulNoor.
 If you have any questions or suggestions, feel free to contact the project maintainer at attaulnoor2001@gmail.com
 
 # Conclusion
-The proposed shipping website aims to provide a seamless shipping experience for users by offering an intuitive interface, advanced tracking features, and efficient logistics management. By investing in this project, we can empower businesses and individuals to streamline their shipping processes, enhance customer satisfaction, and boost operational efficiency.
+The proposed shipping website aims to provide a seamless shipping experience for users by offering an intuitive interface, and efficient logistics management. By investing in this project, we can empower businesses and individuals to streamline their shipping processes, enhance customer satisfaction, and boost operational efficiency.
