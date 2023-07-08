@@ -379,57 +379,54 @@ footer #newsletter form {
 
 /** ...................Blog Page.................... */
 /* Blog Section */
-/* .blog {
-    padding: 150px 150px 0 150px;
-}
-
-.blog-box {
-    width: 100%;
+#blog .card {
+    border: none;
+    flex-direction: row;
+    display: flex;
     position: relative;
-    padding-bottom: 80px;
 }
 
-.blog-img {
-    min-width: 50%;
-    margin-right: 40px;
+#blog .card-img {
+    width: 40%;
+    z-index: 1;
 }
 
-.blog-img img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
+#blog .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 30px;
 }
 
-.blog-details {
-    min-width: 50%;
-    text-align: justify;
+#blog .card-body h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primary-color);
 }
 
-.blog-details p {
-    margin: 10px 0 10px 0;
-}
-
-.blog-details a {
-    font-size: 12px;
-    color: #000;
-    font-weight: 700;
-    transition: 0.3s;
-}
-
-.blog .blog-details a:hover {
-    color: #088178;
+#blog .card-body a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-color);
     cursor: pointer;
 }
 
-.blog-box h1 {
+#blog .card-body a:hover {
+    color: var(--secondary-color);
+    transition: 0.2s ease;
+}
+
+#blog h1 {
     position: absolute;
-    top: -75px;
+    top: -50px;
     left: 0;
-    font-size: 80px;
+    font-size: 4em;
     font-weight: 700;
-    color: #c9cbce;
-    z-index: -9;
-} */
+    letter-spacing: 5px;
+    color: var(--grey-color);
+}
 
 /** ...................Services Page.................... */
 /* Services Section */
@@ -563,16 +560,33 @@ footer #newsletter form {
         margin: 0;
     }
 
+    /** ...................Blog Page.................... */
+    /* Blog Section */
+    #blog .card {
+        flex-direction: column;
+    }
+
+    #blog .card-img {
+        width: 100%;
+        z-index: 1;
+    }
+
+    #blog .card-body {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 30px;
+    }
+
     /** ...................Services Page.................... */
     /* Services Section */
     .service:nth-child(even),
-    .service:nth-child(odd){
+    .service:nth-child(odd) {
         display: flex;
         flex-direction: column;
     }
 
     .service:nth-child(even) img,
-    .service:nth-child(odd) img{
+    .service:nth-child(odd) img {
         width: 100% !important;
         margin-bottom: 30px;
     }
