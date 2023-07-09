@@ -429,6 +429,42 @@ footer #newsletter form {
 }
 
 /** ...................Services Page.................... */
+/* Services Section */
+.service:nth-child(even) {
+    border: none;
+    flex-direction: row;
+}
+
+.service:nth-child(odd) {
+    border: none;
+    flex-direction: row-reverse;
+}
+
+.service:nth-child(even) .card-body {
+    border-top: 5px solid var(--secondary-color);
+    margin-left: 4%;
+    height: fit-content;
+}
+
+.service:nth-child(odd) .card-body {
+    border-top: 5px solid var(--secondary-color);
+    margin-right: 4%;
+    height: fit-content;
+}
+
+/** ...................Services Pages Sea, Land, etc.................... */
+/* About Service Section */
+#all-services .card {
+    border: none;
+    text-align: justify;
+}
+
+#all-services .card-title {
+    line-height: 70px;
+    border-bottom: 5px solid var(--secondary-color);
+}
+
+/** ...................Contact Page.................... */
 /* Contacts Details Section */
 #details {
     display: flex;
@@ -464,10 +500,12 @@ footer #newsletter form {
 }
 
 #forms #form #form1 {
+    width: 50%;
     margin-right: 20px;
 }
 
 #forms #form #form2 {
+    width: 50%;
     margin-left: 20px;
 }
 
@@ -484,28 +522,6 @@ footer #newsletter form {
 #form-btns button {
     width: 120px;
     padding: 10px 30px;
-}
-
-.service:nth-child(even) {
-    border: none;
-    flex-direction: row;
-}
-
-.service:nth-child(odd) {
-    border: none;
-    flex-direction: row-reverse;
-}
-
-.service:nth-child(even) .card-body {
-    border-top: 5px solid var(--secondary-color);
-    margin-left: 4%;
-    height: fit-content;
-}
-
-.service:nth-child(odd) .card-body {
-    border-top: 5px solid var(--secondary-color);
-    margin-right: 4%;
-    height: fit-content;
 }
 
 /* FAQs Section */
@@ -525,26 +541,6 @@ footer #newsletter form {
     outline: none;
     border-color: var(--secondary-color);
     box-shadow: 0 0 0 0.2rem var(--secondary-color);
-}
-
-/** ...................Services Pages Sea, Land, etc.................... */
-/* About Service Section */
-#all-services .card {
-    border: none;
-    text-align: justify;
-}
-
-#all-services .card-title {
-    line-height: 70px;
-    border-bottom: 5px solid var(--secondary-color);
-}
-
-/** ...................Contact Page.................... */
-/* Form Section */
-#form .col button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 /** ...................Responsive Media Queries.................... */
@@ -674,6 +670,7 @@ footer #newsletter form {
 
 @media screen and (max-width: 560px) {
 
+    /** ...................Home Page.................... */
     /* Header Pic Section */
     #header-pic .carousel-caption.home h1 {
         font-size: 18px;
@@ -748,5 +745,35 @@ footer #newsletter form {
 
     footer .col {
         margin-bottom: 15px;
+    }
+
+    /** ...................Contact Page.................... */
+    /* Contacts Details Section */
+    #details {
+        flex-direction: column;
+    }
+
+    #details iframe {
+        width: 100%;
+        height: 400px;
+    }
+
+    #details #detail {
+        width: 100%;
+    }
+
+    /* Contact Forms Section */
+    #forms .card {
+        padding: 25px;
+    }
+
+    #forms #form {
+        flex-direction: column;
+    }
+
+    #forms #form #form1,
+    #forms #form #form2{
+        margin: 0;
+        width: 100%;
     }
 }
