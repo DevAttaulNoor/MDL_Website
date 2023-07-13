@@ -80,6 +80,10 @@ span {
 
 /** ...................Home Page.................... */
 /* Navbar Section */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(185, 207, 37)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
 nav .navbar-brand {
     font-size: 22px;
     color: var(--secondary-color);
@@ -544,7 +548,7 @@ footer #newsletter form {
 }
 
 /** ...................Responsive Media Queries.................... */
-@media screen and (max-width: 885px) {
+@media screen and (max-width: 990px) {
 
     /* Header Pic Section */
     #header-pic .carousel-inner img {
@@ -668,7 +672,7 @@ footer #newsletter form {
     }
 }
 
-@media screen and (max-width: 560px) {
+@media screen and (max-width: 790px) {
 
     /** ...................Home Page.................... */
     /* Header Pic Section */
@@ -772,7 +776,7 @@ footer #newsletter form {
     }
 
     #forms #form #form1,
-    #forms #form #form2{
+    #forms #form #form2 {
         margin: 0;
         width: 100%;
     }
