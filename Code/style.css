@@ -176,7 +176,7 @@ nav #navbarNav .btn {
 /* Qualities Section */
 #qualities {
     background-color: var(--primary-color);
-    background-image: url(../Images/Qualities\ bg.png);
+    background-image: url(../Images/Icons/QualityBg.png);
     height: fit-content;
 }
 
@@ -221,73 +221,44 @@ nav #navbarNav .btn {
 }
 
 /* Testimonial Section */
-/* .testi-img {
-    
+#testimonial .container{
     border-radius: 50px;
-    padding: 0 !important;
-    position: relative;
-} */
+    background-color: var(--primary-color);
+    padding: 20px 0;
+}
 
 .testi-img .img-box {
-    margin: auto;
     position: relative;
     border-radius: 50px;
+    display: flex;
+    justify-content: center;
 }
 
-.testi-img .circle {
+.testi-img .img-box .circle {
     height: 320px;
     width: 320px;
-    background-color: var(--grey-color);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     transition: all 0.5s ease;
-    /* position: absolute; */
-}
-
-.testi-img .circle img {
-    max-width: 280px;
-    max-height: 320px;
-    position: absolute;
-    top: 0;
-    left: 70px;
-} 
-
-/* .testi-img .img-box-inner {
-    position: relative;
-    border-radius: 0 0 180px 180px;
     overflow: hidden;
-    height: 340px;
-    width: 340px;
-}
-
-.testi-img .img-box-inner img {
-    max-width: 280px;
-    max-height: 340px;
-    position: absolute;
-    top: 25px;
-    left: 70px;
-} */
-
-.testi-item h3 {
-    color: var(--primary-color);
-    font-weight: 700;
-    border-bottom: 5px solid var(--secondary-color);
-    width: fit-content;
-    margin-bottom: 20px;
-}
-
-#testimonial .carousel-control-next,
-#testimonial .carousel-control-prev {
     position: relative;
-    height: 35px;
-    width: 35px;
-    background-color: var(--secondary-color);
-    display: inline-flex;
-    border-radius: 50%;
 }
 
-#testimonial .carousel-control-prev img,
-#testimonial .carousel-control-next img {
-    width: 15px;
+.testi-img .img-box .circle img {
+    max-width: 300px;
+    max-height: 300px;
+    position: absolute;
+    top: 35px;
+    left: 72px;
+}
+
+#testimonial .carousel-item{
+    color: var(--white-color);
+}
+
+.testi-info h2 {
+    font-weight: 700;
+    text-decoration: 5px underline var(--secondary-color);
 }
 
 /* Footer Section */
