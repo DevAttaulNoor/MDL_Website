@@ -543,7 +543,6 @@ footer #newsletter {
 
 /** ...................Responsive Media Queries.................... */
 @media screen and (max-width: 990px) {
-
     /* Header Pic Section */
     #header-pic .carousel-inner img {
         height: 60vh;
@@ -576,23 +575,15 @@ footer #newsletter {
         padding: 10px 0 10px 0;
     }
 
-    /* Testimonials Section */
-    .testi-img .circle {
-        height: 260px;
-        width: 260px;
+    /* Testimonials Section */    
+    .testi-img .img-box .circle {
+        height: 240px;
+        width: 240px;
     }
-
-    .testi-img .img-box-inner {
-        height: 260px;
-    }
-
-    .testi-img .img-box-inner img {
-        max-width: 260px;
-        max-height: 260px;
-    }
-
-    #testimonial .carousel-inner {
-        margin-top: 0 !important;
+    
+    .testi-img .img-box .circle img {
+        top: 20px;
+        left: 35px;
     }
 
     /* Footer Section */
@@ -667,7 +658,6 @@ footer #newsletter {
 }
 
 @media screen and (max-width: 790px) {
-
     /** ...................Home Page.................... */
     /* Header Pic Section */
     #header-pic .carousel-caption.home h1 {
@@ -693,35 +683,10 @@ footer #newsletter {
     }
 
     /* Testimonial Section */
-    .testi-img .img-box {
-        margin-bottom: 20px;
-    }
-
-    .testi-img .circle {
-        height: 340px;
-        width: 340px;
-    }
-
-    .testi-img .img-box-inner {
-        height: 340px;
-    }
-
-    .testi-img .img-box-inner img {
-        max-width: 340px;
-        max-height: 340px;
-    }
-
-    #testimonial .carousel-item h3,
-    #testimonial .carousel-item p {
-        width: initial;
+    #testimonial .carousel-inner{
+        margin-top: 20px;
+        padding: 0 20px;
         text-align: center;
-    }
-
-    .middle-item {
-        position: absolute;
-        bottom: -25%;
-        left: 50%;
-        transform: translate(-50%, -50%);
     }
 
     /* Footer Section */
