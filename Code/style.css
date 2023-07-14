@@ -229,9 +229,7 @@ nav #navbarNav .btn {
 } */
 
 .testi-img .img-box {
-    max-width: 360px;
     margin: auto;
-    text-align: center;
     position: relative;
     border-radius: 50px;
 }
