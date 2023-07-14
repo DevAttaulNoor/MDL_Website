@@ -221,12 +221,12 @@ nav #navbarNav .btn {
 }
 
 /* Testimonial Section */
-.testi-img {
-    /* border-right: 5px solid #002147; */
+/* .testi-img {
+    
     border-radius: 50px;
     padding: 0 !important;
     position: relative;
-}
+} */
 
 .testi-img .img-box {
     max-width: 360px;
@@ -240,10 +240,18 @@ nav #navbarNav .btn {
     height: 340px;
     width: 340px;
     background-color: var(--grey-color);
-    position: absolute;
     border-radius: 50%;
     transition: all 0.5s ease;
+    /* position: absolute; */
 }
+
+.testi-img .circle img {
+    max-width: 280px;
+    max-height: 320px;
+    position: absolute;
+    top: 0;
+    left: 70px;
+} 
 
 /* .testi-img .img-box-inner {
     position: relative;
