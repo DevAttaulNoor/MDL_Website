@@ -211,7 +211,7 @@ nav #navbarNav .btn {
 
 /* Services Section */
 #services .card{
-    border: 1px solid var(--primary-color);
+    border: 2px solid var(--primary-color);
     border-radius: 50px;
 }
 
@@ -298,10 +298,6 @@ footer #newsletter {
     border-radius: 50px;
 }
 
-footer #newsletter form {
-    display: flex;
-}
-
 #newsletter span {
     color: var(--primary-color);
 }
@@ -309,16 +305,16 @@ footer #newsletter form {
 #newsletter input {
     width: 40%;
     padding: 10px 20px;
-    border: 1px solid transparent;
+    border: none;
     outline: none;
-    border-radius: 5px;
+    border-radius: 50px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
 }
 
 #newsletter button {
     width: 10%;
-    padding: 10px 20px;
+    border-radius: 50px;
     border-top-left-radius: 0 !important;
     border-bottom-left-radius: 0 !important;
 }
