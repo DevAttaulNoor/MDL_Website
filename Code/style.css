@@ -210,12 +210,12 @@ nav #navbarNav .btn {
 }
 
 /* Services Section */
-#services .card{
+#homepg-services .card{
     border: 2px solid var(--primary-color);
     border-radius: 50px;
 }
 
-#services .card img{
+#homepg-services .card img{
     border-top-left-radius: 50px;
     border-top-right-radius: 50px;
 }
