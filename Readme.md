@@ -1,12 +1,16 @@
 # Introduction
-We propose the development of a comprehensive responsive shipping website that aims to streamline and simplify the shipping process for businesses and individuals. This platform will provide a user-friendly interface, advanced tracking capabilities, and efficient logistics management features. Our goal is to create a reliable and efficient shipping solution that meets the diverse needs of users.
+This shipping website is designed to facilitate services provided by the company. It has been developed using HTML, CSS, Bootstrap and JavaScript, emphasizing responsiveness and simplicity.
 
 # Getting Started
 To run the website locally on your machine, follow these steps.
 - Clone the repository or download the source code.
 - Open the project directory in your preferred code editor.
 - Ensure you have a modern web browser installed.
-- Open the index.html file in your browser.
+- Open the Home.html file in your browser.
+
+# Functionalities:
+- Services Viewing: The users can visit the website and browse through the available services. Different services information, images, and details are displayed for user perusal.
+- Multipage Navigation: The website consists of multiple pages allowing users to explore different sections such as services, details and info of transportations, blogs, about us, contact, etc.
 
 # Technologies
 The website is built using the following technologies.
