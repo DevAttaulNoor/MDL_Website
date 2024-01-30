@@ -176,7 +176,7 @@ nav #navbarNav .btn {
 /* Qualities Section */
 #qualities {
     background-color: var(--primary-color);
-    background-image: url(../Images/Icons/QualityBg.png);
+    background-image: url(./Images/Icons/QualityBg.png);
     height: fit-content;
 }
 
@@ -337,7 +337,7 @@ footer #newsletter {
 
 /* Background Pic Section */
 #header-pic nav {
-    --bs-breadcrumb-divider: url(../../Svgs/breadcrumbs-svgrepo-com.svg width: 10; height: 10;)
+    --bs-breadcrumb-divider: url(./Svgs/breadcrumbs-svgrepo-com.svg width: 10; height: 10;)
 }
 
 .breadcrumb-item,
